@@ -1,0 +1,11 @@
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(25, 100%, 94%);
+  border-radius: 3px;
+  border: 2px solid hsl(26, 100%, 55%);
+}

@@ -1,0 +1,91 @@
+.modal-carrousel {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.8);
+  padding-top: 80px;
+
+  .carrousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .close-carrousel {
+    cursor: pointer;
+    color: white;
+    margin: 0 0 20px 0;
+    align-self: end;
+    width: 25%;
+  }
+
+  .content-carrousel {
+    position: relative;
+
+    .previous {
+      left: -20px;
+      right: unset;
+      padding: 3px 5px 3px 1px;
+    }
+    .next, .previous {
+      position: absolute;
+      right: -20px;
+      top: 35%;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .next {
+      padding: 3px 1px 3px 5px !important;
+    }
+    .previous:hover, .next:hover {
+      color: hsl(26, 100%, 55%);
+    }
+    img {
+      cursor: pointer;
+      border-radius: 8px;
+      width: 300px;
+    }
+
+    .thumbnails {
+      margin: 30px 0 0 0;
+      display: flex;
+      justify-content: space-around;
+
+      img {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border: 2px solid transparent;
+        
+      }
+      .selected-img {
+        position: relative;
+        border-color: hsl(26, 100%, 55%);
+
+        &::after {
+          position: absolute;
+          content: '';
+          top: 2px;
+          left: 2px;
+          right: 2px;
+          bottom: 5px;
+          background-color: white;
+          z-index: 2000;
+          border-radius: 8px;
+          opacity: .7;
+        }
+      }
+    }
+  }
+}

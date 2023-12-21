@@ -1,0 +1,32 @@
+@import "fonts";
+@import "header";
+@import "medias";
+@import "body";
+@import "body2";
+@import "scrollbar";
+@import "cart-modal";
+@import "modal-success";
+@import "modal-carrousel";
+
+html, body {
+  margin: 0 40px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: Kumbh Sans;
+  position: relative;
+}
+body {
+  overflow-x: hidden;
+}
+.guide {
+  color: hsl(26, 100%, 55%);
+  color: hsl(25, 100%, 94%);
+  color: hsl(220, 13%, 13%);
+  color: hsl(219, 9%, 45%);
+  color: hsl(220, 14%, 75%);
+  color: hsl(223, 64%, 98%);
+}
+/*
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+*/

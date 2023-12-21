@@ -1,0 +1,17 @@
+.modal-success {
+  width: 300px;
+  height: 300px;
+  color: hsl(26, 100%, 55%);
+  border-radius: 8px;
+  background-color: hsl(25, 100%, 94%);
+  position: fixed;
+  z-index: 1000;
+  top: 20%;
+  left: 40%;
+  margin: 0 auto;
+
+  h1 {
+    padding: 40px;
+  }
+
+}
